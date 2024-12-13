@@ -3,6 +3,7 @@ import requests
 
 
 # Haal SECRET_KEY op uit de omgevingsvariabelen
+#test
 SECRET_KEY="TEST"
 
 def greet():
