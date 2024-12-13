@@ -2,6 +2,8 @@ import os
 import requests
 from dotenv import load_dotenv
 
+# pul
+
 # Laad de variabelen uit het .env bestand
 load_dotenv()
 
@@ -12,7 +14,6 @@ def greet():
     print("Hello, World!")
 
 def fetch_data():
-    # Kwetsbaarheid 2: Gebruik van een kwetsbare afhankelijkheid (requests==2.18.0)
     response = requests.get("https://example.com")
     print(f"Status Code: {response.status_code}")
 
@@ -20,7 +21,7 @@ def main():
     greet()
     fetch_data()
     user_input = "hello"
-    print(f"Hello, {user_input}")
+    print("Hello, ", user_input)
 
 if __name__ == "__main__":
     main()
