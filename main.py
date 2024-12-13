@@ -12,7 +12,6 @@ def greet():
     print("Hello, World!") # hi
 
 def fetch_data():
-    # Kwetsbaarheid 2: Gebruik van een kwetsbare afhankelijkheid (requests==2.18.0)
     response = requests.get("https://example.com")
     print(f"Status Code: {response.status_code}")
 
