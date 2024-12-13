@@ -16,7 +16,7 @@ def main():
     greet()
     fetch_data()
     user_input = "hello"
-    print("Hello, ", user_input)
+    print(f"Hello, {user_input}")
 
 if __name__ == "__main__":
     main()
