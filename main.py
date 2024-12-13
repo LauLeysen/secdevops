@@ -9,7 +9,7 @@ load_dotenv()
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 def greet():
-    print("Hello, World!")
+    print("Hello, World!") # hi
 
 def fetch_data():
     # Kwetsbaarheid 2: Gebruik van een kwetsbare afhankelijkheid (requests==2.18.0)
