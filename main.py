@@ -19,8 +19,7 @@ def fetch_data():
 def main():
     greet()
     fetch_data()
-    # Kwetsbaarheid 3: Potentieel onveilige verwerking van invoer
-    user_input = input("Enter your name: ")
+    user_input = "hello"
     print(f"Hello, {user_input}")
 
 if __name__ == "__main__":
