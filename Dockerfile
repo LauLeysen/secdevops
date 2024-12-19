@@ -1,5 +1,5 @@
 # Gebruik een officiële Python 3.8 runtime als basisimage
-FROM python:3.8-slim
+FROM python:3.11-slim
 
 # Stel de werkdirectory in
 WORKDIR /app

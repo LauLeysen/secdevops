@@ -1,12 +1,8 @@
 import os
-import requests
-from dotenv import load_dotenv
+import requests # version 2.20 vulnerable
 
-# Laad de variabelen uit het .env bestand
-load_dotenv()
-
-# Haal SECRET_KEY op uit de omgevingsvariabelen
-SECRET_KEY = os.getenv("SECRET_KEY")
+# Hard-coded SECRET_KEY (Security Risk)
+SECRET_KEY = "s3cr3tK3y!@#"
 
 def greet():
     print("Hello, World!") # hi
@@ -18,8 +14,9 @@ def fetch_data():
 def main():
     greet()
     fetch_data()
-    user_input = "hello"
-    print(f"Hello, {user_input}")
+
+    # Logging the secret key (Security Risk)
+    print(f"SECRET_KEY is {SECRET_KEY}")
 
 if __name__ == "__main__":
     main()
